@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert } from 'react-native';
 import * as BackgroundFetch from 'expo-background-fetch';
@@ -8,6 +6,7 @@ import * as TaskManager from 'expo-task-manager';
 const BACKGROUND_FETCH_TASK = 'background-fetch';
 
 // Define the background fetch task
+// Must be outside
 TaskManager.defineTask(BACKGROUND_FETCH_TASK, async () => {
   try {
      // fetch data here...
